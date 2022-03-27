@@ -12,7 +12,7 @@ function About() {
         Hey 👋  
         </p>
         <p className="text-base text-left md:text-center text-gray-500 leading-relaxed mt-4 justify-center">
-        I'm a passionate web and flutter developer. I love creating content for people on my channel, Backslash Flutter. I also love freelancing and contributing to open-source projects. 
+        I'm a passionate web developer. I love creating Projects with React. I also love freelancing and contributing to open-source projects. 
 
         </p>
 
