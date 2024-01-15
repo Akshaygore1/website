@@ -1,65 +1,74 @@
-import React from 'react'
-import crypto from '../Assets/crypto.jpeg'
-import Github from '../Assets/github.jpeg'
-import food from '../Assets/food.jpeg'
+import React from "react";
+import crypto from "../Assets/crypto.jpeg";
+import Dashboard from "../Assets/Dashboard.jpeg";
+import ProjectCard from "./Projectcard";
+import Store from "../Assets/Store.jpeg";
+import ADMIN from "../Assets/admin.png";
+import Coupon from "../Assets/Coupon.jpeg";
+import Food from "../Assets/food.jpeg";
+
+const projectsData = [
+	{
+		title: "CouponLap",
+		image: Coupon,
+		description: "Built with Next.js 14, Supabase, Cloudinary, and PostgreSQL.",
+		liveLink: "https://couponlap.in/"
+	},
+	{
+		title: "Admin Dashboard",
+		image: Dashboard,
+		description: "Next.js 14, Vercel, PostgreSQL, Server Actions.",
+		liveLink: "https://nextjs-admin-dashboard-alpha.vercel.app/",
+		githubLink: "https://github.com/Akshaygore1/nextjsAdminDashboard"
+	},
+	{
+		title: "Cryptoowl",
+		image: crypto,
+		description:
+			"Developed using React, Material UI, CoinGecko API, and Context API.",
+		liveLink: "https://cryptoowl.netlify.app/",
+		githubLink: "https://github.com/Akshaygore1/Crypto-Owl"
+	},
+	{
+		title: "E-Commerce CMS",
+		image: ADMIN,
+		description: "Next.js 14, PlanetScale, Prisma, Zustand.",
+		liveLink: "https://storemanagerhub.vercel.app",
+		githubLink: "https://github.com/Akshaygore1/Crypto-Owl"
+	},
+	{
+		title: "E-Commerce",
+		image: Store,
+		description: "Next.js 14, PlanetScale, Prisma, Zustand.",
+		liveLink: "https://myecommerceshop.vercel.app/",
+		githubLink:
+			"https://github.com/Akshaygore1/Next-Js-Ecommerce/tree/main/store"
+	},
+	{
+		title: "Restaurant Website",
+		image: Food,
+		description: "Using HTML, CSS, JavaScript",
+		liveLink: "https://myrestraurant.netlify.app/",
+		githubLink: "https://github.com/Akshaygore1/Restraurant-Website"
+	}
+];
 
 function Projects() {
-  return (
-    <div className='max-w-4xl mx-auto justify-center py-12' id="tech">
-        <p className="text-2xl text-black  md:text-4xl font-bold text-center pt-4">
-          Projects 
-        </p>
-        
-        <div className = "flex flex-wrap justify-center pt-2">
-
-
-        <div class="card w-96 p-10 m-6 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={crypto} alt="Shoes" class="rounded-xl" />
-             </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Cryptoowl</h2>
-               <p>React Material UI </p>
-            <a class="card-actions" href='https://cryptoowl.netlify.app/'>
-                <button class="btn btn-primary">Go to Site</button>
-            </a>
-          </div>
-        </div>
-     
-
-
-        <div class="card w-96 p-10 m-6 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={Github} alt="Shoes" class="rounded-xl" />
-             </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Github Report</h2>
-               <p>React Tailwind CSS</p>
-            <a class="card-actions" href='*'>
-              <button class="btn btn-primary">Go to Site</button>
-            </a>
-          </div>
-        </div>
-
-
-
-        <div class="card w-96  p-10 m-6 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={food} alt="Shoes" class="rounded-xl" />
-             </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Restrarant Website</h2>
-               <p>HTML</p>
-            <a class="card-actions" href='https://myrestraurant.netlify.app/'>
-              <button class="btn btn-primary">Go to Site</button>
-            </a>
-          </div>
-        </div>
-
-
-        </div>
-    </div>
-  )
+	return (
+		<div className="max-w-4xl mx-auto justify-center py-12" id="tech">
+			<p className="text-2xl md:text-4xl font-bold pt-4 my-2">Projects</p>
+			<div className="flex flex-wrap justify-center py-2 my-2">
+				{projectsData.map((project, index) => (
+					<div
+						key={index}
+						className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2"
+					>
+						<ProjectCard {...project} />
+					</div>
+				))}
+			</div>
+		</div>
+	);
 }
 
-export default Projects
+export default Projects;

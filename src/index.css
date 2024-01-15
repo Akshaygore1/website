@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link-styles {
+	color: inherit; /* or any desired color */
+	text-decoration: none;
+}

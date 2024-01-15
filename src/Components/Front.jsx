@@ -1,53 +1,87 @@
-import React from 'react'
-import photo from '../Assets/123.jpg'
-import {FaRegEnvelope} from 'react-icons/fa'
-import {AiOutlineLinkedin} from 'react-icons/ai'
-import {FiTwitter,FiGithub} from 'react-icons/fi'
+import React from "react";
+import photo from "../Assets/123.jpg";
+import RoundedChip from "./Skill";
+import { FaNodeJs, FaReact, FaAws, FaDocker } from "react-icons/fa";
+import {
+	BiLogoJavascript,
+	BiLogoGraphql,
+	BiLogoPostgresql,
+	BiLogoMongodb,
+	BiLogoTypescript
+} from "react-icons/bi";
+import { SiApachekafka, SiRedis } from "react-icons/si";
+import { CiCircleMore } from "react-icons/ci";
+import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
+
+const skills = [
+	{ name: "JavaScript", icon: <BiLogoJavascript /> },
+	{ name: "Node.js", icon: <FaNodeJs color="green" /> },
+	{ name: "ReactJS", icon: <FaReact color=" #87ceeb" /> },
+	{ name: "GraphQL", icon: <BiLogoGraphql color="#AA336A" /> },
+	{ name: "PostgreSQL", icon: <BiLogoPostgresql color="blue" /> },
+	{ name: "MongoDB", icon: <BiLogoMongodb color="green" /> },
+	{ name: "AWS", icon: <FaAws /> },
+	{ name: "Docker", icon: <FaDocker color="#1C63ED" /> },
+	{ name: "Redis", icon: <SiRedis color="red" /> },
+	{ name: "TypeScript", icon: <BiLogoTypescript color="#3077C6" /> },
+	{ name: "Kafka", icon: <SiApachekafka /> },
+	{ name: "Learning More...", icon: <CiCircleMore /> }
+];
+
+const socialLinks = [
+	{
+		label: "Github",
+		icon: <FiGithub />,
+		link: "https://github.com/Akshaygore1"
+	},
+	{
+		label: "Twitter",
+		icon: <FiTwitter />,
+		link: "https://twitter.com/Akshaygore2301"
+	},
+	{
+		label: "LinkedIn",
+		icon: <FiLinkedin />,
+		link: "https://www.linkedin.com/in/akshaygore2301/"
+	},
+	{
+		label: "Email",
+		icon: <FiMail />,
+		link: "mailto:backslash.flutter@gmail.com"
+	}
+];
 
 function Front() {
-  return (
-    <div className="w-full">
-        <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-2xl rounded-xl p-5'>
-            <div className = "">
-                 <img className="w-32 mx-auto shadow-xl rounded-full drop-shadow-sm" src={photo} alt="profile face" />
-            </div>
-        <div className="text-center mt-5">
-                <p className='text-xl sm:text-2xl font-semibold text-gray-900'>
-                    Akshay Gore
-                </p>
-                <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
-                     Full Stack Developer
-                </p>
-        <div className="flex align-center justify-center mt-4">
-
-
-                <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300" href="https://github.com/Akshaygore1">
-                    <FiGithub />
-                    <span class="sr-only">Github</span>
-                </a>
-
-
-                <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300" href="https://twitter.com/Akshaygore2301">
-                    <FiTwitter />
-                    <span class="sr-only">Twitter</span>  
-                </a>
-
-
-                <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full hover:text-white transition-colors duration-300" href="mailto:akshaygore2301@gmail.com">
-                    <FaRegEnvelope />
-                    <span class="sr-only">Email</span>  
-                </a>
-
-                <a className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full hover:text-white transition-colors duration-300" href="https://mailto:backslash.flutter@gmail.com">
-                    <AiOutlineLinkedin />
-                    <span class="sr-only">Email</span>  
-                </a>
-
-            </div>
-            </div>
-            </div>
-        </div>
-  )
+	return (
+		<div className="w-full flex flex-col items-center justify-center">
+			<div className="mb-4">
+				<img
+					className="w-24 mx-auto shadow-xl rounded-full"
+					src={photo}
+					alt="profile face"
+				/>
+			</div>
+			<div className="text-center mt-3">
+				<p className="text-2xl font-semibold ">Akshay Gore</p>
+				<p className="text-xs text-white-400 mt-2">Full Stack Developer</p>
+			</div>
+			<div className="text-center mt-5 max-w-3xl">
+				{skills.map((skill, index) => (
+					<RoundedChip key={index} label={skill.name} icon={skill.icon} />
+				))}
+			</div>
+			<div className="flex align-center justify-center mt-4">
+				{socialLinks.map((socialLink, index) => (
+					<RoundedChip
+						key={index}
+						label={socialLink.label}
+						icon={socialLink.icon}
+						link={socialLink.link}
+					/>
+				))}
+			</div>
+		</div>
+	);
 }
 
-export default Front
+export default Front;

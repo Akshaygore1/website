@@ -1,36 +1,19 @@
-import React from 'react'
-import { FaChevronDown } from 'react-icons/fa';
-import ScrollIntoView from 'react-scroll-into-view'
-
+import React from "react";
 
 function About() {
-  return (
-    <div>
-     
-      <div className="max-w-4xl mt-20 mx-auto">
-        <p className="text-2xl text-black  md:text-4xl font-bold text-center">
-        Hey 👋  
-        </p>
-        <p className="text-base text-left md:text-center text-gray-500 leading-relaxed mt-4 justify-center">
-        I'm a passionate web developer. I love creating Projects with React. I also love freelancing and contributing to open-source projects. 
-
-        </p>
-
-      
-      
-      </div>
-      
-      
-      <ScrollIntoView selector = "#tech">
-
-        <div class='mx-auto p-20'>
-          
-           <FaChevronDown class= "animate-bounce mx-auto text-3xl text-blue-500"/> 
-      
-        </div>
-       </ScrollIntoView>
-    </div>
-  )
+	return (
+		<div>
+			<div className="max-w-4xl mt-20 mx-auto">
+				<p className="text-base text-left md:text-center leading-relaxed mt-4 justify-center">
+					Welcome to my digital space! I'm Akshay Gore, an accomplished Full
+					Stack Developer with a proven 2-year track record in crafting scalable
+					and responsive web applications. I specialize in navigating the entire
+					development lifecycle, from conceptualization to delivery, while
+					fostering collaborative teamwork and staying ahead of industry trends.
+				</p>
+			</div>
+		</div>
+	);
 }
 
-export default About
+export default About;
