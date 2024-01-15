@@ -10,7 +10,7 @@ import {
 	BiLogoTypescript
 } from "react-icons/bi";
 import { SiApachekafka, SiRedis } from "react-icons/si";
-import { CiCircleMore } from "react-icons/ci";
+import { CgMoreO } from "react-icons/cg";
 import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 
 const skills = [
@@ -25,7 +25,7 @@ const skills = [
 	{ name: "Redis", icon: <SiRedis color="red" /> },
 	{ name: "TypeScript", icon: <BiLogoTypescript color="#3077C6" /> },
 	{ name: "Kafka", icon: <SiApachekafka /> },
-	{ name: "Learning More...", icon: <CiCircleMore /> }
+	{ name: "Learning More...", icon: <CgMoreO /> }
 ];
 
 const socialLinks = [

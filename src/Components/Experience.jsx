@@ -12,7 +12,7 @@ const Experience = () => {
 			/>
 
 			<div className="p-4 m-2 rounded-lg border-l-4 border-primary">
-				<blockquote className="text-lg italic m-2">
+				<blockquote className="text-lg italic m-2 ">
 					As a Full Stack Developer at Zeliot Connected Services:
 					<ul className="list-disc list-inside">
 						<li>
