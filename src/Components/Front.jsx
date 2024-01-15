@@ -2,28 +2,29 @@ import React from "react";
 import photo from "../Assets/123.jpg";
 import RoundedChip from "./Skill";
 import { FaNodeJs, FaReact, FaAws, FaDocker } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
+import { SiPostgresql, SiMongodb } from "react-icons/si";
+
 import {
-	BiLogoJavascript,
-	BiLogoGraphql,
-	BiLogoPostgresql,
-	BiLogoMongodb,
-	BiLogoTypescript
-} from "react-icons/bi";
-import { SiApachekafka, SiRedis } from "react-icons/si";
+	SiApachekafka,
+	SiRedis,
+	SiTypescript,
+	SiJavascript
+} from "react-icons/si";
 import { CgMoreO } from "react-icons/cg";
 import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 
 const skills = [
-	{ name: "JavaScript", icon: <BiLogoJavascript /> },
+	{ name: "JavaScript", icon: <SiJavascript /> },
 	{ name: "Node.js", icon: <FaNodeJs color="green" /> },
 	{ name: "ReactJS", icon: <FaReact color=" #87ceeb" /> },
-	{ name: "GraphQL", icon: <BiLogoGraphql color="#AA336A" /> },
-	{ name: "PostgreSQL", icon: <BiLogoPostgresql color="blue" /> },
-	{ name: "MongoDB", icon: <BiLogoMongodb color="green" /> },
+	{ name: "GraphQL", icon: <GrGraphQl color="#AA336A" /> },
+	{ name: "PostgreSQL", icon: <SiPostgresql color="blue" /> },
+	{ name: "MongoDB", icon: <SiMongodb color="green" /> },
 	{ name: "AWS", icon: <FaAws /> },
 	{ name: "Docker", icon: <FaDocker color="#1C63ED" /> },
 	{ name: "Redis", icon: <SiRedis color="red" /> },
-	{ name: "TypeScript", icon: <BiLogoTypescript color="#3077C6" /> },
+	{ name: "TypeScript", icon: <SiTypescript color="#3077C6" /> },
 	{ name: "Kafka", icon: <SiApachekafka /> },
 	{ name: "Learning More...", icon: <CgMoreO /> }
 ];
