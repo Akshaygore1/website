@@ -1,12 +1,44 @@
 module.exports = {
-  content: [ "./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  daisyui: {
-    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
-  },
-  plugins: [require('daisyui')],
-  
-  
-}
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	theme: {
+		extend: {
+			colors: {
+				myCustomColor: "#111010",
+			},
+		},
+	},
+	daisyui: {
+		themes: [
+			"light",
+			"dark",
+			"cupcake",
+			"bumblebee",
+			"emerald",
+			"corporate",
+			"synthwave",
+			"retro",
+			"cyberpunk",
+			"valentine",
+			"halloween",
+			"garden",
+			"forest",
+			"aqua",
+			"lofi",
+			"pastel",
+			"fantasy",
+			"wireframe",
+			"black",
+			"luxury",
+			"dracula",
+			"cmyk",
+			"autumn",
+			"business",
+			"acid",
+			"lemonade",
+			"night",
+			"coffee",
+			"winter",
+		],
+	},
+	plugins: [require("daisyui")],
+};
