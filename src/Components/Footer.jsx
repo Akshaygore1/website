@@ -6,23 +6,23 @@ const socialLinks = [
 	{
 		label: "Github",
 		icon: <FiGithub />,
-		link: "https://github.com/Akshaygore1"
+		link: "https://github.com/Akshaygore1",
 	},
 	{
 		label: "Twitter",
 		icon: <FiTwitter />,
-		link: "https://twitter.com/Akshaygore2301"
+		link: "https://twitter.com/Akshaygore2301",
 	},
 	{
 		label: "LinkedIn",
 		icon: <FiLinkedin />,
-		link: "https://www.linkedin.com/in/akshaygore2301/"
+		link: "https://www.linkedin.com/in/akshaygore2301/",
 	},
 	{
 		label: "Email",
 		icon: <FiMail />,
-		link: "mailto:backslash.flutter@gmail.com"
-	}
+		link: "mailto:backslash.flutter@gmail.com",
+	},
 ];
 
 function Footer() {
