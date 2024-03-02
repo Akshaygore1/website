@@ -49,7 +49,7 @@ const Blogs = () => {
 	}, []);
 
 	return (
-		<div className="max-w-4xl mx-auto justify-center py-12" id="tech">
+		<div className="max-w-3xl mx-auto justify-center py-12" id="tech">
 			<p className="text-2xl md:text-4xl font-bold py-2 my-2">Blogs</p>
 			<div className="grid grid-cols-1 gap-4">
 				{posts.length > 0 &&

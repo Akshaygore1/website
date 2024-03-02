@@ -9,7 +9,7 @@ import {
 	SiApachekafka,
 	SiRedis,
 	SiTypescript,
-	SiJavascript
+	SiJavascript,
 } from "react-icons/si";
 import { CgMoreO } from "react-icons/cg";
 import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
@@ -26,35 +26,35 @@ const skills = [
 	{ name: "Redis", icon: <SiRedis color="red" /> },
 	{ name: "TypeScript", icon: <SiTypescript color="#3077C6" /> },
 	{ name: "Kafka", icon: <SiApachekafka /> },
-	{ name: "Learning More...", icon: <CgMoreO /> }
+	{ name: "Learning More...", icon: <CgMoreO /> },
 ];
 
 const socialLinks = [
 	{
 		label: "Github",
 		icon: <FiGithub />,
-		link: "https://github.com/Akshaygore1"
+		link: "https://github.com/Akshaygore1",
 	},
 	{
 		label: "Twitter",
 		icon: <FiTwitter />,
-		link: "https://twitter.com/Akshaygore2301"
+		link: "https://twitter.com/Akshaygore2301",
 	},
 	{
 		label: "LinkedIn",
 		icon: <FiLinkedin />,
-		link: "https://www.linkedin.com/in/akshaygore2301/"
+		link: "https://www.linkedin.com/in/akshaygore2301/",
 	},
 	{
 		label: "Email",
 		icon: <FiMail />,
-		link: "mailto:backslash.flutter@gmail.com"
-	}
+		link: "mailto:backslash.flutter@gmail.com",
+	},
 ];
 
 function Front() {
 	return (
-		<div className="w-full flex flex-col items-center justify-center">
+		<div className="max-w-3xl mx-auto justify-center py-12">
 			<div className="mb-4">
 				<img
 					className="w-24 mx-auto shadow-xl rounded-full"
@@ -66,7 +66,7 @@ function Front() {
 				<p className="text-2xl font-semibold ">Akshay Gore</p>
 				<p className="text-xs text-white-400 mt-2">Full Stack Developer</p>
 			</div>
-			<div className="text-center mt-5 max-w-3xl">
+			<div className="flex align-center flex-wrap justify-center mt-4">
 				{skills.map((skill, index) => (
 					<RoundedChip key={index} label={skill.name} icon={skill.icon} />
 				))}

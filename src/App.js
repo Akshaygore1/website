@@ -10,7 +10,7 @@ import Projects from "./Components/Projects";
 function App() {
 	return (
 		<>
-			<div className="antialiased min-h-screen py-10 px-3 sm:px-5 bg-myCustomColor text-white w-[50vw]">
+			<div className="antialiased min-h-screen py-10 px-3 sm:px-5 bg-myCustomColor text-white ">
 				<Front />
 				<About />
 				<Experience />

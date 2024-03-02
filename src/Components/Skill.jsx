@@ -2,7 +2,7 @@ import React from "react";
 
 function RoundedChip({ label, icon, link }) {
 	return (
-		<div className=" capitalize text-xs py-0.5 px-3 bg-[#262626] border border-neutral-400 rounded justify-between text-white items-center inline-flex m-1">
+		<div className="capitalize text-xs py-0.5 px-3 bg-[#262626] border border-neutral-400 rounded justify-between text-white items-center inline-flex m-1">
 			{link ? (
 				<a
 					href={link}
